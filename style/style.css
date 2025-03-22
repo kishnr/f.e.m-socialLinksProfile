@@ -1,0 +1,90 @@
+/* Sets the entire pages font to be Inter */
+* {
+  font-family: "Inter";
+}
+/* Defines Color styles as variables that are used in the design */
+:root {
+  --slp-green: hsl(75, 94%, 57%);
+  --slp-gray-700: hsl(0, 0%, 20%);
+  --slp-gray-800: hsl(0, 0%, 12%);
+  --slp-gray-900: hsl(0, 0%, 8%);
+}
+/* Defining the h4 inside the .nameplace class tag that has color in it */
+.nameplace > h4 {
+  color: var(--slp-green);
+}
+/* Defining css properties for the body */
+body {
+  margin: 0;
+  height: 100vh;
+  color: white;
+  background-color: var(--slp-gray-900);
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Center content inside the container */
+.container {
+  display: inline-flex; /* Inline flex to size based on content */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+/* Wrapper for the main content */
+.content {
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+/* Card containing user profile info and links */
+.links-card {
+  border-radius: 10px;
+  padding: 24px 32px;
+  background-color: var(--slp-gray-800);
+
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+}
+img {
+  border-radius: 100%; /* Make it circular */
+  width: 84px;
+}
+.nameplace {
+  text-align: center; /* Align the texts elements to the center */
+}
+ul {
+  width: 100%;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  font-weight: bold;
+  border: none;
+  color: white;
+  background-color: var(--slp-gray-700);
+  border-radius: 10px;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 16px;
+}
+
+button:hover {
+  color: var(--slp-gray-900);
+  background-color: var(--slp-green);
+}
+
+button:active {
+  color: var(--slp-gray-900);
+  background-color: var(--slp-green);
+}
+
+.attribution > a {
+  color: var(--slp-green);
+}
